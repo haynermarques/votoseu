@@ -3,6 +3,7 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'dart:async';
 import 'dart:ui';
+import '/index.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -1749,7 +1750,7 @@ class _SingleSessaoWidgetState extends State<SingleSessaoWidget> {
                                   },
                                 );
 
-                                context.goNamed('abre');
+                                context.goNamed(AbreWidget.routeName);
 
                                 safeSetState(() {});
                               },
@@ -1862,7 +1863,7 @@ class _SingleSessaoWidgetState extends State<SingleSessaoWidget> {
                                   },
                                 );
 
-                                context.goNamed('abre');
+                                context.goNamed(AbreWidget.routeName);
                               },
                               child: Container(
                                 width: double.infinity,
@@ -2000,7 +2001,7 @@ class _SingleSessaoWidgetState extends State<SingleSessaoWidget> {
                                   },
                                 );
 
-                                context.goNamed('abre');
+                                context.goNamed(AbreWidget.routeName);
 
                                 safeSetState(() {});
                               },

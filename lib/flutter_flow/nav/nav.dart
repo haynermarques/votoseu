@@ -9,7 +9,6 @@ import '/backend/schema/structs/index.dart';
 
 import '/backend/supabase/supabase.dart';
 
-import '/index.dart';
 import '/main.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:ff_commons/flutter_flow/lat_lng.dart';
@@ -18,6 +17,8 @@ import '/flutter_flow/flutter_flow_util.dart';
 import 'serialization_util.dart';
 import "package:shadcn_u_i_kit_v48jv9/backend/schema/structs/index.dart"
     as shadcn_u_i_kit_v48jv9_data_schema;
+
+import '/index.dart';
 
 export 'package:go_router/go_router.dart';
 export 'serialization_util.dart';
@@ -73,28 +74,28 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               : AbreWidget(),
         ),
         FFRoute(
-          name: 'HomePage',
-          path: '/homePage',
+          name: HomePageWidget.routeName,
+          path: HomePageWidget.routePath,
           builder: (context, params) => HomePageWidget(),
         ),
         FFRoute(
-          name: 'Listarsessoes',
-          path: '/listarsessoes',
+          name: ListarsessoesWidget.routeName,
+          path: ListarsessoesWidget.routePath,
           builder: (context, params) => ListarsessoesWidget(),
         ),
         FFRoute(
-          name: 'Votarsessao',
-          path: '/votarsessao',
+          name: VotarsessaoWidget.routeName,
+          path: VotarsessaoWidget.routePath,
           builder: (context, params) => VotarsessaoWidget(),
         ),
         FFRoute(
-          name: 'abre',
-          path: '/abre',
+          name: AbreWidget.routeName,
+          path: AbreWidget.routePath,
           builder: (context, params) => AbreWidget(),
         ),
         FFRoute(
-          name: 'singleVoto',
-          path: '/singleVoto',
+          name: SingleVotoWidget.routeName,
+          path: SingleVotoWidget.routePath,
           builder: (context, params) => SingleVotoWidget(
             id: params.getParam(
               'id',

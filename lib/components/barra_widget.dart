@@ -2,6 +2,7 @@ import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'dart:math';
 import 'dart:ui';
+import '/index.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
@@ -207,7 +208,7 @@ class _BarraWidgetState extends State<BarraWidget>
                         hoverColor: Colors.transparent,
                         highlightColor: Colors.transparent,
                         onTap: () async {
-                          context.pushNamed('abre');
+                          context.pushNamed(AbreWidget.routeName);
                         },
                         child: Image.network(
                           'https://italootavio.com.br/wp-content/uploads/2025/01/ITALO-OTAVIO-ID-VISUAL-1-e1736718434842-768x538.png',
@@ -231,7 +232,7 @@ class _BarraWidgetState extends State<BarraWidget>
                             hoverColor: Colors.transparent,
                             highlightColor: Colors.transparent,
                             onTap: () async {
-                              context.pushNamed('abre');
+                              context.pushNamed(AbreWidget.routeName);
                             },
                             child: Text(
                               'O VOTO É SEU',
